@@ -1,9 +1,11 @@
-const add = function(a,b){
-    return a+b;
-}
+const add = function(...numbers) {
+  return numbers.reduce((acc, cur) => {
+    return acc + cur;
+  });
+};
 
 const math = {
-    add:add
-}
+  add: add
+};
 
 module.exports = math;
